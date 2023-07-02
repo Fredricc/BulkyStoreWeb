@@ -2,7 +2,7 @@
 
 namespace BulkyStoreWeb.Models
 {
-    public class Cataegory
+    public class Category
     {
         [Key]
         public int Id { get; set; }
