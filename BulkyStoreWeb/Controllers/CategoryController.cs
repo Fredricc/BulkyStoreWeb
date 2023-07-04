@@ -1,11 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BulkyStoreWeb.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyStoreWeb.Controllers
 {
     public class CategoryController : Controller
     {
+        private readonly ApplicationDbContext _db;
+
+        public CategoryController(ApplicationDbContext db)
+        {
+            this._db = db ?? throw new ArgumentNullException(nameof(db));
+        }
         public IActionResult Index()
         {
+            var objCategoryList = _db.Categories.ToList();
             return View();
         }
     }
