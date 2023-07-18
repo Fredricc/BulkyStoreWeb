@@ -1,4 +1,4 @@
-﻿using BulkyStoreWeb.Models;
+﻿using BulkyStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

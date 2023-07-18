@@ -1,5 +1,6 @@
-﻿using BulkyStoreWeb.Data;
-using BulkyStoreWeb.Models;
+﻿
+using BulkyStore.DataAccess;
+using BulkyStore.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyStoreWeb.Controllers
